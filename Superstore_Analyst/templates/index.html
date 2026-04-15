@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superstore Analytics Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="logo-area">
+          <div class="logo-icon">📦</div>
+          <div class="logo-title">Superstore<br />Analytics</div>
+          <div class="logo-sub">Business Intelligence</div>
+        </div>
+
+        <div class="nav-section">
+          <div class="nav-label">Phân tích</div>
+          <div class="nav-item active" onclick="switchTab('tab1', this)">
+            <svg
+              class="nav-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 13l4-4 4 4 4-6 4 4M3 20h18"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Doanh thu</span>
+          </div>
+          <div class="nav-item" onclick="switchTab('tab2', this)">
+            <svg
+              class="nav-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="2"
+                y="7"
+                width="20"
+                height="14"
+                rx="2"
+                stroke-width="2"
+              />
+              <path d="M16 3H8v4h8V3z" stroke-width="2" />
+            </svg>
+            <span>Sản phẩm</span>
+          </div>
+          <div class="nav-item" onclick="switchTab('tab3', this)">
+            <svg
+              class="nav-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m4-4a4 4 0 100-8 4 4 0 000 8z"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <span>Khách hàng</span>
+          </div>
+        </div>
+
+        <div class="sidebar-footer">
+          <div class="data-badge">
+            <div class="dot"></div>
+            Live Data
+          </div>
+          <div id="sidebar-record-count">Loading...</div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="page-title" id="pageTitle"> Doanh thu</div>
+          <div class="topbar-right">
+            <span class="time-chip" id="clock">--:--:--</span>
+            <button class="export-btn" onclick="window.print()">
+              In báo cáo 
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab 1 Doanh thu -->
+        <div class="content fade-in" id="tab1">
+          <div class="filter-panel">
+            <div class="filter-group">
+              <span class="filter-label">Năm</span>
+              <select class="filter-select" id="t1-year">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Tháng</span>
+              <select class="filter-select" id="t1-month">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Khu vực</span>
+              <select class="filter-select" id="t1-region">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Bang</span>
+              <select class="filter-select" id="t1-state">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Danh mục</span>
+              <select class="filter-select" id="t1-category">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Phân khúc</span>
+              <select class="filter-select" id="t1-segment">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="flex gap-2 ml-auto">
+              <button class="apply-btn" onclick="applyFilters('tab1')">
+                Apply
+              </button>
+              <button class="filter-reset" onclick="clearFilters('tab1')">
+                Clear
+              </button>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-label">Tổng Doanh thu</div>
+              <div
+                class="kpi-value"
+                id="totalSales"
+                style="color: var(--accent)"
+              >
+                $0.00M
+              </div>
+              <div id="salesGrowth" class="growth-label"></div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Tổng Lợi nhuận</div>
+              <div
+                class="kpi-value"
+                id="totalProfit"
+                style="color: var(--accent)"
+              >
+                $0K
+              </div>
+              <div id="profitGrowth" class="growth-label"></div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Biên lợi nhuận</div>
+              <div
+                class="kpi-value"
+                id="profitMargin"
+                style="color: var(--accent)"
+              >
+                0%
+              </div>
+              <div id="marginGrowth" class="growth-label"><small></small></div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Tổng Đơn hàng</div>
+              <div
+                class="kpi-value"
+                id="totalOrders"
+                style="color: var(--accent)"
+              >
+                0
+              </div>
+              <div id="orderGrowth" class="growth-label"></div>
+            </div>
+          </div>
+
+          <!--Biểu đồ Tab1-->
+          <div class="main-chart-grid">
+            <div class="chart-card col-span-2">
+              <div class="chart-title">Xu hướng theo tháng (Sales & Profit)</div>
+              <div class="chart-wrap" style="height: 220px">
+                <canvas id="lineMonthly"></canvas>
+              </div>
+            </div>
+            <div class="chart-card col-span-2">
+              <div class="chart-title">Xu hướng theo năm (Sales & Profit)</div>
+              <div class="chart-wrap" style="height: 220px">
+                <canvas id="lineYearly"></canvas>
+              </div>
+            </div>
+
+            <div class="chart-card col-span-2">
+              <div class="chart-title">Doanh thu & Lợi nhuận theo bang</div>
+              <div class="chart-wrap" style="height: 280px">
+                <canvas id="stateBarChart"></canvas>
+              </div>
+            </div>
+            <div class="chart-card col-span-1">
+              <div class="chart-title">Top 10 TP (Doanh thu)</div>
+              <div class="chart-wrap" style="height: 280px">
+                <canvas id="citySalesBar"></canvas>
+              </div>
+            </div>
+            <div class="chart-card col-span-1">
+              <div class="chart-title">Top 10 TP (Lợi nhuận)</div>
+              <div class="chart-wrap" style="height: 280px">
+                <canvas id="cityProfitBar"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2 Sản phẩm -->
+        <div class="content fade-in tab-hidden" id="tab2">
+          <div class="filter-panel">
+            <div class="filter-group">
+              <span class="filter-label">Năm</span>
+              <select class="filter-select" id="t2-year">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Tháng</span>
+              <select class="filter-select" id="t2-month">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Khu vực</span>
+              <select class="filter-select" id="t2-region">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Bang</span>
+              <select class="filter-select" id="t2-state">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Danh mục</span>
+              <select class="filter-select" id="t2-category">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Phân khúc</span>
+              <select class="filter-select" id="t2-segment">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="flex gap-2 ml-auto">
+              <button class="apply-btn" onclick="applyFilters('tab2')">
+                Apply
+              </button>
+              <button class="filter-reset" onclick="clearFilters('tab2')">
+                Clear
+              </button>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-label">Tổng Doanh thu</div>
+              <div
+                class="kpi-value"
+                id="t2-totalSales"
+                style="color: var(--accent)"
+              >
+                $0.00M
+              </div>
+              <div id="t2-salesGrowth" class="growth-label"></div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Tổng Lợi nhuận</div>
+              <div
+                class="kpi-value"
+                id="t2-totalProfit"
+                style="color: var(--accent)"
+              >
+                $0K
+              </div>
+              <div id="t2-profitGrowth" class="growth-label"></div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Số lượng bán</div>
+              <div
+                class="kpi-value"
+                id="t2-totalQuantity"
+                style="color: var(--blue)"
+              >
+                0
+              </div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Chiết khấu trung bình</div>
+              <div class="kpi-value" id="t2-avgDiscount">0%</div>
+            </div>
+          </div>
+
+          <!--Biểu đồ Tab2-->
+          <div class="main-chart-grid" style="margin-top: 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+            <div class="chart-card col-span-2">
+              <div class="chart-title">Doanh thu & Lợi nhuận theo Danh mục</div>
+              <div class="chart-wrap" style="height: 350px">
+                <canvas id="categoryStackedBar"></canvas>
+              </div>
+            </div>
+
+            <div class="chart-card col-span-2">
+              <div class="chart-title">Top Category bán chạy nhất</div>
+              <div class="chart-wrap" style="height: 350px">
+                <canvas id="categorySalesBar"></canvas>
+              </div>
+            </div>
+
+            <div class="chart-card col-span-4">
+              <div class="chart-title">Top Sub-Category bán chạy nhất</div>
+              <div class="chart-wrap" style="height: 350px">
+                <canvas id="subCategoryHorizontalStackedBar"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3 Khách hàng -->
+        <div class="content fade-in tab-hidden" id="tab3">
+          <div class="filter-panel">
+            <div class="filter-group">
+              <span class="filter-label">Năm</span>
+              <select class="filter-select" id="t3-year">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Tháng</span>
+              <select class="filter-select" id="t3-month">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Khu vực</span>
+              <select class="filter-select" id="t3-region">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Bang</span>
+              <select class="filter-select" id="t3-state">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Danh mục</span>
+              <select class="filter-select" id="t3-category">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Phân khúc</span>
+              <select class="filter-select" id="t3-segment">
+                <option value="">Tất cả</option>
+              </select>
+            </div>
+            <div class="flex gap-2 ml-auto">
+              <button class="apply-btn" onclick="applyFilters('tab3')">
+                Apply
+              </button>
+              <button class="filter-reset" onclick="clearFilters('tab3')">
+                Clear
+              </button>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-label">Tổng Khách hàng</div>
+              <div
+                class="kpi-value"
+                id="t3-totalCustomers"
+                style="color: var(--purple)"
+              >
+                0
+              </div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Doanh thu / Khách hàng</div>
+              <div
+                class="kpi-value"
+                id="t3-salesPerCustomer"
+                style="color: var(--green)"
+              >
+                $0
+              </div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Lợi nhuận / Khách hàng</div>
+              <div
+                class="kpi-value"
+                id="t3-profitPerCustomer"
+                style="color: var(--blue)"
+              >
+                $0
+              </div>
+            </div>
+          </div>
+
+        <div class="grid grid-cols-3 gap-6 section-gap">
+          <div class="chart-card">
+            <h3 class="chart-title">Số lượng đơn hàng theo phân khúc</h3>
+            <div class="chart-container" style="height: 350px;">
+            <canvas id="segmentPieChart"></canvas>
+            </div>
+          </div>
+
+        <div class="chart-card col-span-2">
+        <h3 class="chart-title">Top 10 Khách hàng đem lại giá trị cao nhất</h3>
+         <div class="table-responsive">
+           <table class="leaderboard-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Khách hàng</th>
+                <th>Phân khúc</th>
+                <th>Đơn</th>
+                <th>Doanh thu</th>
+                <th>Lợi nhuận</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboardBody"></tbody>
+           </table>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
