@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|d:\\windows\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qlphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qlphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\phieuphat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\phieuphat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qlnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qlthuphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qlthuphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|d:\\windows\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\quanlysv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\quanlysv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\\u0111\u0103ng nh\u1EADp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\\u0111\u0103ng nh\u1EADp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qlhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A077F6-96A6-420C-A221-9A79FEF28995}|QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1.csproj|solutionrelative:qu\u1EA3n l\u00FD k\u00FD t\u00FAc x\u00E1\\qlhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "baocaothongke.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\baocaothongke.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\baocaothongke.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\baocaothongke.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\baocaothongke.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T12:38:51.934Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "qlthuphi.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlthuphi.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlthuphi.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlthuphi.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlthuphi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T11:36:20.049Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "qlnv.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlnv.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlnv.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlnv.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlnv.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T11:00:50.084Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "phieuphat.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\phieuphat.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\phieuphat.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\phieuphat.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\phieuphat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T10:47:39.493Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "qlphong.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlphong.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlphong.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlphong.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\qlphong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T10:01:21.391Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "quanlysv.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\quanlysv.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\quanlysv.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\quanlysv.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\quanlysv.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T07:26:43.186Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QLhopdong.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QLhopdong.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QLhopdong.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QLhopdong.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QLhopdong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:10:19.795Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "trangchu.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\trangchu.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\trangchu.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\trangchu.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\trangchu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T06:04:05.584Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "\u0111\u0103ng nh\u1EADp.cs [Design]",
+              "DocumentMoniker": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\\u0111\u0103ng nh\u1EADp.cs",
+              "RelativeDocumentMoniker": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\\u0111\u0103ng nh\u1EADp.cs",
+              "ToolTip": "D:\\windows\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\\u0111\u0103ng nh\u1EADp.cs [Design]",
+              "RelativeToolTip": "QU\u1EA2N L\u00DD K\u00DD T\u00DAC X\u00C1\\\u0111\u0103ng nh\u1EADp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T05:04:07.732Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

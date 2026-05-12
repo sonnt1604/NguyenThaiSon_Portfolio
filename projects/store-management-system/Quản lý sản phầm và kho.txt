@@ -1,0 +1,119 @@
+I. QUẢN LÝ SẢN PHẨM
+A. Thêm sản phẩm
+1. Nhân viên kho vào mục quản lý sản phẩm
+2. Nhân viên kho chọn chức năng thêm mới sản phẩm
+3. Nhân viên kho nhập thông tin sản phẩm gồm: Mã, Tên, Loại, Đơn vị, Ngày sản xuất, Hạn sử dụng, Giá nhập, Giá bán, Nhà cung cấp)
+4. Hệ thống kiểm tra mã sản phẩm đã tồn tại hay chưa:
+	- Yes -> Thông báo "Sản phẩm đã tồn tại"
+	- No: Lưu sản phẩm mới
+5. Hệ thống hiển thị xác nhận thành công
+
+
+B. Cập nhật thông tin sản phẩm
+1. Nhân viên kho vào mục quản lý sản phẩm
+2. Nhân viên kho chọn vào sản phẩm muốn cập nhật (chỉnh sửa hoặc gắn tag)
+3. Nhân viên kho chọn chức năng chỉnh sửa thông tin sản phẩm
+4. Hệ thống hiển thị form chỉnh sửa thông tin sản phẩm
+5. Nhân viên kho điền thông tin cần cập nhật và ấn lưu
+6. Hệ thống kiểm tra thông tin sản phẩm:
+	- Nhập thiếu thông tin -> thông báo điền đủ thông tin
+	- Nhập đủ thông tin
+7. Hệ thống hiển thị xác nhận thành công
+
+
+C. Tìm kiếm & lọc sản phẩm
+1. Nhân viên kho vào mục quản lý sản phẩm
+2. Nhân viên nhập thông tin vào thanh tìm kiếm (Tên sản phẩm)
+3. Nhân viên chọn lọc theo (Ngày sản xuất, Hạn sử dụng, Nhà cung cấp)
+4. Hệ thống truy xuất dữ liệu từ CSDL:
+	- Sản phẩm có trong CSDL -> Hiển thị danh sách sản phẩm
+	- Sản phẩm không có trong CSDL -> Thông báo không tìm thấy sản phẩm
+
+
+D. Xóa sản phẩm
+1. Nhân viên kho vào mục quản lý sản phẩm
+2. Nhân viên chọn sản phẩm đã gắn tag "Ngừng kinh doanh"
+3. Nhân viên chọn chức năng xóa
+4. Hệ thống gửi yêu cầu xác nhận xóa:
+	- No -> quay lại trang danh sách sản phẩm
+	- Yes -> Thông báo đã xóa thành công
+
+
+II. Quản lý kho
+A. Nhập kho 
+1. Nhân viên kho chọn Nhập hàng trong mục kho hàng
+2. Nhân viên chọn sản phẩm theo tên hàng và nhập thông tin (Nhà cung cấp, Số lượng, Ngày sản xuất, Hạn sử dụng, Giá nhập, Giá bán)
+3. Hệ thống kiểm tra sản phẩm đã tồn tại chưa bằng Mã sản phẩm:
+	- Yes -> Cộng dồn số lượng vào tồn kho
+	- No -> Tạo sản phẩm mới
+4. Hệ thống xác nhận phiếu nhập thành công và hiển thị ở danh sách phiếu nhập hàng
+
+
+B. Xuất kho
+1. Xuất kho tự động (Do Bán hàng)
+- Nhân viên Bán hàng lập và hoàn tất Hóa đơn bán hàng (ở module Quản lý Bán hàng).
+- Hệ thống nhận tín hiệu Hóa đơn đã thanh toán.
+- Hệ thống ngay lập tức truy cập CSDL Tồn Kho.
+- Hệ thống tự động trừ đi số lượng của từng mặt hàng đã bán ra khỏi cột Số lượng tồn kho hiện tại.
+- Hệ thống ghi nhận giao dịch xuất hàng này vào sổ Xuất kho.
+
+2. Xuất kho thủ công (Hàng hỏng/Hết hạn)
+- Nhân viên Kho tiến hành kiểm tra thực tế các lô hàng hỏng/hết hạn.
+- Nhân viên Kho truy cập module Quản lý Xuất kho → Chọn chức năng Lập Phiếu Hủy/Xuất Nội bộ.
+- Nhân viên Kho điền thông tin chi tiết (Lý do hủy/hỏng, Ngày xuất) và nhập danh sách Mã hàng cùng Số lượng cần hủy.
+- Hệ thống kiểm tra: Nếu Số lượng hủy ≤ Tồn kho hiện tại → Lưu Phiếu Hủy.
+- Hệ thống căn cứ vào Phiếu Hủy vừa được lưu, tự động giảm số lượng tồn kho thực tế của các mặt hàng đó.
+- Hệ thống cập nhật dữ liệu tổn thất này vào module Báo cáo
+
+
+C. Theo dõi Tồn kho & Cảnh báo
+1. Hiển thị Tồn kho tức thời
+- Nhân viên Kho vào mục Theo dõi Tồn kho.
+- Hệ thống truy xuất dữ liệu Số lượng tồn kho hiện tại của tất cả sản phẩm từ CSDL Tồn Kho.
+- Hệ thống hiển thị danh sách tồn kho trực quan, cho phép Nhân viên Kho lọc/tìm kiếm theo Tên, Mã, Loại hàng, hoặc Nhà cung cấp.
+
+2. Cảnh báo Tồn kho & Hạn sử dụng
+- Hệ thống chạy tác vụ nền định kỳ (ví dụ: mỗi đầu giờ làm việc).
+- Hệ thống kiểm tra Số lượng tồn kho so với Mức tồn tối thiểu đã định sẵn.
+- Hệ thống kiểm tra Hạn sử dụng của các lô hàng (phát hiện lô hàng có HSD ≤30 ngày).
+- Hệ thống tạo danh sách các sản phẩm cần cảnh báo (Hết hàng/Sắp hết hạn).
+- Hệ thống hiển thị Cảnh báo này trên giao diện chính của Nhân viên Kho và gửi thông báo nếu cần
+
+D. Báo cáo kho
+- Nhân viên Kho truy cập module Báo cáo Kho.
+- Nhân viên Kho chọn Loại báo cáo (Nhập – Xuất – Tồn hoặc Hàng hỏng/Hết hạn).
+- Nhân viên Kho chọn Khoảng thời gian và các tiêu chí lọc (ví dụ: theo Loại hàng, Nhà cung cấp).
+- Hệ thống truy xuất dữ liệu từ CSDL Phiếu Nhập, Phiếu Xuất và Tồn Kho trong khoảng thời gian đã chọn.
+- Hệ thống tổng hợp và hiển thị báo cáo trực quan (dạng bảng, biểu đồ).
+- Hệ thống cho phép Nhân viên Kho chọn chức năng Xuất file (Excel/PDF) để lưu trữ hoặc in ấn báo cáo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

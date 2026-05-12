@@ -1,0 +1,20 @@
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\bin\Debug\QUẢN LÝ KÝ TÚC XÁ.exe.config
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\bin\Debug\QUẢN LÝ KÝ TÚC XÁ.exe
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\bin\Debug\QUẢN LÝ KÝ TÚC XÁ.pdb
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\bin\Debug\Guna.UI2.dll
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN LÝ KÝ TÚC XÁ.csproj.AssemblyReference.cache
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.Properties.Resources.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.Form1.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN LÝ KÝ TÚC XÁ.csproj.GenerateResource.cache
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN LÝ KÝ TÚC XÁ.csproj.CoreCompileInputs.cache
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN LÝ .F9759955.Up2Date
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN LÝ KÝ TÚC XÁ.exe
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN LÝ KÝ TÚC XÁ.pdb
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.trang_chủ.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.phieuphat.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.QLhopdong.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.qlnv.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.qlphong.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.qlthuphi.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.quanlysv.resources
+D:\windows\QUẢN LÝ KÝ TÚC XÁ\QUẢN LÝ KÝ TÚC XÁ\obj\Debug\QUẢN_LÝ_KÝ_TÚC_XÁ.baocaothongke.resources

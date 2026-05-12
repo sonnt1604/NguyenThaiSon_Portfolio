@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95A077F6-96A6-420C-A221-9A79FEF28995}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QUẢN_LÝ_KÝ_TÚC_XÁ</RootNamespace>
+    <AssemblyName>QUẢN LÝ KÝ TÚC XÁ</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baocaothongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baocaothongke.Designer.cs">
+      <DependentUpon>baocaothongke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="phieuphat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="phieuphat.Designer.cs">
+      <DependentUpon>phieuphat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLhopdong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLhopdong.Designer.cs">
+      <DependentUpon>QLhopdong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qlnv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qlnv.Designer.cs">
+      <DependentUpon>qlnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qlphong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qlphong.Designer.cs">
+      <DependentUpon>qlphong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qlthuphi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qlthuphi.Designer.cs">
+      <DependentUpon>qlthuphi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanlysv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanlysv.Designer.cs">
+      <DependentUpon>quanlysv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trangchu.Designer.cs">
+      <DependentUpon>trangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="đăng nhập.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="đăng nhập.Designer.cs">
+      <DependentUpon>đăng nhập.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="baocaothongke.resx">
+      <DependentUpon>baocaothongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phieuphat.resx">
+      <DependentUpon>phieuphat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QLhopdong.resx">
+      <DependentUpon>QLhopdong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qlnv.resx">
+      <DependentUpon>qlnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qlphong.resx">
+      <DependentUpon>qlphong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qlthuphi.resx">
+      <DependentUpon>qlthuphi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanlysv.resx">
+      <DependentUpon>quanlysv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trangchu.resx">
+      <DependentUpon>trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="đăng nhập.resx">
+      <DependentUpon>đăng nhập.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
